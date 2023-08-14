@@ -1,8 +1,12 @@
 # Install Homebrew
+echo "Installing Homebrew:"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "Successfully installed Homebrew"
 
 # Install oh-my-zsh
+echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "Successfully installed oh-my-zsh"
 
 # Install LunarVim
 echo "Install LunarVim by following steps: https://www.lunarvim.org/docs/installation"
@@ -47,5 +51,6 @@ for package in "${packages[@]}"; do
     else
         echo "Installing package $package..."
         brew install "$package"
+        echo "Successfully installed package $package..."
     fi
 done
