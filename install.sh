@@ -34,6 +34,7 @@ packages=(
     iterm2
     itsycal
     karabiner-elements
+    lazygit
     microsoft-edge
     microsoft-office
     notion
