@@ -1,0 +1,119 @@
+{
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', Menlo",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": false,
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "errorLens.enabled": false,
+  "eslint.format.enable": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "github.copilot.advanced": {},
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "yaml": false
+  },
+  "gitlens.plusFeatures.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "python.pythonPath": "/opt/homebrew/bin/python3",
+  "python.showStartPage": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.fontSize": 18,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.startupEditor": "none",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "gitlens.outputLevel": "debug",
+  "vim.enableNeovim": true,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "g",
+        "h"
+      ],
+      "commands": [
+        "cursorHome",
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "j"
+      ],
+      "commands": [
+        "cursorBottom",
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "k"
+      ],
+      "commands": [
+        "cursorTop",
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "l"
+      ],
+      "commands": [
+        "cursorEnd",
+      ]
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative",
+  "gitlens.mode.active": "zen",
+  "zenMode.hideLineNumbers": false
+}
