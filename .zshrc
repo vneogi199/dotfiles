@@ -104,5 +104,15 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/Users/vinit/.local/bin:$PATH
 
 alias lv="lvim"
+alias nv="nvim"
 alias bup="brew upgrade -fg && brew cleanup && brew cleanup -s"
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
+
+# pnpm
+export PNPM_HOME="/Users/vinit/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
