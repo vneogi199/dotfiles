@@ -16,8 +16,7 @@ vim.opt.relativenumber = true
 -- Set lvim settings
 lvim.colorscheme = "catppuccin-frappe"
 lvim.builtin.lualine.style = "default"
-lvim.builtin.terminal.open_mapping = "<C-l>"
-lvim.format_on_save.enabled = true
+-- lvim.format_on_save.enabled = true
 
 -- Set lvim keyboard mappings
 lvim.keys.normal_mode["<C-d>"] = "<C-d>zz" -- center screen on page down
