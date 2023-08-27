@@ -21,6 +21,7 @@ packages=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     arc
+    fd
     firefox
     font-cascadia-code
     font-caskaydia-cove-nerd-font
@@ -31,16 +32,21 @@ packages=(
     font-jetbrains-mono-nerd-font
     font-meslo-lg-nerd-font
     google-chrome
+    # helix
     iterm2
     itsycal
     karabiner-elements
+    kitty
     lazygit
     microsoft-edge
     microsoft-office
     notion
     numi
+    ranger
+    ripgrep
     scroll-reverser
     spotify
+    tree-sitter
     visual-studio-code
     warp
     zoom
