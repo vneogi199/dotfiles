@@ -14,6 +14,7 @@ echo "Install LunarVim by following steps: https://www.lunarvim.org/docs/install
 
 # Install Homebrew packages
 packages=(
+    docker
     neovim
     node
     pnpm
@@ -32,7 +33,6 @@ packages=(
     font-jetbrains-mono-nerd-font
     font-meslo-lg-nerd-font
     google-chrome
-    # helix
     iterm2
     itsycal
     karabiner-elements
@@ -61,3 +61,4 @@ for package in "${packages[@]}"; do
         echo "Successfully installed package $package..."
     fi
 done
+

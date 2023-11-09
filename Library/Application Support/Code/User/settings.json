@@ -50,7 +50,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Catppuccin Frappé",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -58,7 +57,6 @@
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-  "gitlens.outputLevel": "debug",
   "vim.enableNeovim": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "extensions.experimental.affinity": {
@@ -115,5 +113,6 @@
   ],
   "editor.lineNumbers": "relative",
   "gitlens.mode.active": "zen",
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "workbench.editor.empty.hint": "hidden"
 }
