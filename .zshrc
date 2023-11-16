@@ -105,6 +105,7 @@ export PATH=/Users/vinit/.local/bin:$PATH
 
 alias lv="lvim"
 alias nv="nvim"
+alias v="nvim"
 alias bup="brew upgrade -fg && brew cleanup && brew cleanup -s"
 alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
