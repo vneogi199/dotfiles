@@ -115,5 +115,6 @@
   "gitlens.mode.active": "zen",
   "zenMode.hideLineNumbers": false,
   "workbench.editor.empty.hint": "hidden",
-  "nxConsole.showNodeVersionOnStartup": false
+  "nxConsole.showNodeVersionOnStartup": false,
+  "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font Mono\""
 }
