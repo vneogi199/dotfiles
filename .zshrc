@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -10,6 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,7 +79,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt common-aliases)
+plugins=(git git-prompt common-aliases colored-man-pages colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,16 +106,23 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias zshsource="source ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 export PATH=/Users/vinit/.local/bin:$PATH
+export EDITOR="nvim"
 
+alias c="clear"
+alias e="exit"
 alias lv="lvim"
 alias nv="nvim"
-alias v="nvim"
+alias v="nvim ."
+alias vnc="nvim ~/.config/nvim"
+alias vc="nvim ~/.config"
 alias bup="brew upgrade -fg && brew cleanup && brew cleanup -s"
 alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias lg="lazygit"
 alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 # pnpm
@@ -117,3 +132,22 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# if type brew &>/dev/null; then
+#   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+#
+#   autoload -Uz compinit
+#   compinit
+# fi
+
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh # must be after zsh-syntax-highlighting
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh

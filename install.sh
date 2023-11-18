@@ -21,6 +21,10 @@ packages=(
     yarn
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-completions
+    zsh-history-substring-search
+    zsh-you-should-use
+    powerlevel10k
     arc
     fd
     firefox
