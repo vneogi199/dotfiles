@@ -58,6 +58,7 @@
     "FIG_NEW_SESSION": "1"
   },
   "vim.enableNeovim": true,
+  "vim.useSystemClipboard": true,
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1

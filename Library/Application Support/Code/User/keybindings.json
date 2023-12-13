@@ -119,10 +119,6 @@
         "command": "workbench.action.splitEditorRight"
     },
     {
-        "key": "cmd+m",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
         "key": "tab",
         "command": "tab",
         "when": "editorTextFocus && !editorTabMovesFocus"
@@ -134,12 +130,12 @@
     },
     // Traverse VSCode IntelliSense suggestions with vim keybindings.
     {
-        "key": "cmd+j",
+        "key": "ctrl+n",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "cmd+k",
+        "key": "ctrl+p",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
@@ -149,7 +145,7 @@
         "command": "workbench.action.terminal.newInActiveWorkspace"
     },
     {
-        "key": "cmd+enter",
+        "key": "ctrl+\\",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
@@ -191,4 +187,23 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+    {
+        "key": "cmd+l",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "editor.action.insertSnippet",
+                    "when": "editorTextFocus",
+                    "args": {
+                        "snippet": "console.log('${TM_SELECTED_TEXT}$1')$2;"
+                    }
+                },
+                {
+                    "command": "extension.vim_insert",
+                    "when": "editorTextFocus",
+                }
+            ]
+        }
+    }
 ]
