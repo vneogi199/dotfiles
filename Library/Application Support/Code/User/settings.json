@@ -18,6 +18,7 @@
   "editor.insertSpaces": false,
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "first",
+  "editor.stickyScroll.enabled": true,
   "errorLens.enabled": false,
   "eslint.format.enable": true,
   "explorer.confirmDragAndDrop": false,
