@@ -27,13 +27,6 @@
   },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
-  "github.copilot.advanced": {},
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
-    "plaintext": false,
-    "yaml": false
-  },
   "gitlens.plusFeatures.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "notebook.cellToolbarLocation": {
