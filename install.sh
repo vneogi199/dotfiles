@@ -36,6 +36,7 @@ packages=(
     font-hack-nerd-font
     font-jetbrains-mono-nerd-font
     font-meslo-lg-nerd-font
+    go
     google-chrome
     iterm2
     itsycal
