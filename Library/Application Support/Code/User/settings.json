@@ -108,5 +108,6 @@
   "zenMode.hideLineNumbers": false,
   "workbench.editor.empty.hint": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
-  "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font Mono\""
+  "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font Mono\"",
+  "editor.cursorSurroundingLines": 8
 }
