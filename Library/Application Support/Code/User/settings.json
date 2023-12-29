@@ -109,5 +109,9 @@
   "workbench.editor.empty.hint": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
   "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font Mono\"",
-  "editor.cursorSurroundingLines": 8
+  "editor.cursorSurroundingLines": 8,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>"
 }
