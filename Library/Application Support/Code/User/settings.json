@@ -91,6 +91,26 @@
         "cursorEnd",
       ]
     },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ],
+      "silent": true
+    }
   ],
   "vim.insertModeKeyBindings": [
     {
