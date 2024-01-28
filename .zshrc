@@ -151,3 +151,7 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
 source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

@@ -133,5 +133,6 @@
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
-  "vim.leader": "<space>"
+  "vim.leader": "<space>",
+  "git.suggestSmartCommit": false
 }
