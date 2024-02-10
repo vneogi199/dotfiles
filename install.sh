@@ -14,6 +14,7 @@ echo "Install LunarVim by following steps: https://www.lunarvim.org/docs/install
 
 # Install Homebrew packages
 packages=(
+    camo
     docker
     neovim
     node
