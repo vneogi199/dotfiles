@@ -155,3 +155,6 @@ source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# Load starship
+eval "$(starship init zsh)"

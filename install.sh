@@ -19,6 +19,7 @@ packages=(
     neovim
     node
     pnpm
+    starship
     yarn
     zsh-autosuggestions
     zsh-syntax-highlighting
