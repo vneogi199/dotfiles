@@ -26,7 +26,7 @@ packages=(
     zsh-completions
     zsh-history-substring-search
     zsh-you-should-use
-    powerlevel10k
+    # powerlevel10k
     arc
     fd
     firefox
