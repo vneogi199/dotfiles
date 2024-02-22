@@ -19,6 +19,7 @@ packages=(
     neovim
     node
     pnpm
+    raycast
     starship
     yarn
     zsh-autosuggestions
