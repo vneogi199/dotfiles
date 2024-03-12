@@ -8,10 +8,6 @@ echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "Successfully installed oh-my-zsh"
 
-# Install LunarVim
-echo "Install LunarVim by following steps: https://www.lunarvim.org/docs/installation"
-
-
 # Install Homebrew packages
 packages=(
     camo
@@ -54,6 +50,7 @@ packages=(
     ripgrep
     scroll-reverser
     spotify
+    tmux
     tree-sitter
     visual-studio-code
     warp
