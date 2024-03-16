@@ -51,6 +51,7 @@ packages=(
     scroll-reverser
     spotify
     tmux
+    tpm
     tree-sitter
     visual-studio-code
     warp
