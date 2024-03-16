@@ -1,7 +1,22 @@
-# Fonts
+# tab_bar_style separator
+tab_separator " │ "
 
-font_family Hack Nerd Font Mono
+font_family JetBrainsMono Nerd Font Mono
 italic_font auto
 bold_font auto
 bold_italic_font auto
-font_size 16.0
+font_size 20.0
+
+# hide_window_decorations yes
+
+# https://github.com/catppuccin/kitty?tab=readme-ov-file#-faq
+tab_bar_min_tabs            1
+tab_bar_edge                bottom
+tab_bar_style               powerline
+tab_powerline_style         slanted
+tab_title_template          {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Frappe
+include current-theme.conf
+# END_KITTY_THEME
