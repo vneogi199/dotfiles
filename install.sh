@@ -55,6 +55,7 @@ packages=(
     tree-sitter
     visual-studio-code
     warp
+    wezterm
     zoom
 )
 
