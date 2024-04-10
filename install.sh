@@ -49,7 +49,7 @@ packages=(
     ranger
     ripgrep
     scroll-reverser
-    spotify
+    # spotify
     tmux
     tpm
     tree-sitter
