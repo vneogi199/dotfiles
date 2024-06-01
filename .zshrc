@@ -125,6 +125,7 @@ alias bup="brew upgrade -fg && brew cleanup && brew cleanup -s"
 alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias lg="lazygit"
 alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
+alias t="tmux"
 
 # pnpm
 export PNPM_HOME="/Users/vinit/Library/pnpm"
