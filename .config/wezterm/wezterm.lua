@@ -22,5 +22,5 @@ return {
 	},
 	native_macos_fullscreen_mode = true,
 	use_fancy_tab_bar = false,
-	default_cursor_style = "BlinkingBar",
+	default_cursor_style = "SteadyBar",
 }
