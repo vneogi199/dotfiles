@@ -10,7 +10,7 @@ echo "Successfully installed oh-my-zsh"
 
 # Install Homebrew packages
 packages=(
-    camo
+    # camo
     docker
     neovim
     node
@@ -23,7 +23,7 @@ packages=(
     zsh-completions
     zsh-history-substring-search
     zsh-you-should-use
-    # powerlevel10k
+    zoxide
     arc
     fd
     firefox
@@ -35,17 +35,19 @@ packages=(
     font-hack-nerd-font
     font-jetbrains-mono-nerd-font
     font-meslo-lg-nerd-font
+    font-geist-mono-nerd-font
     go
     google-chrome
-    iterm2
     itsycal
-    karabiner-elements
+    # karabiner-elements
+    keyclu
     kitty
     lazygit
     microsoft-edge
     microsoft-office
     notion
     numi
+    pearcleaner
     ranger
     ripgrep
     scroll-reverser
