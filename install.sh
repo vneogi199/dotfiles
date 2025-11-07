@@ -10,7 +10,6 @@ echo "Successfully installed oh-my-zsh"
 
 # Install Homebrew packages
 packages=(
-    # camo
     docker
     neovim
     node
@@ -24,8 +23,6 @@ packages=(
     zsh-history-substring-search
     zsh-you-should-use
     zoxide
-    arc
-    fd
     firefox
     font-cascadia-code
     font-caskaydia-cove-nerd-font
@@ -39,11 +36,8 @@ packages=(
     go
     google-chrome
     itsycal
-    # karabiner-elements
     keyclu
-    kitty
     lazygit
-    microsoft-edge
     microsoft-office
     notion
     numi
@@ -51,13 +45,10 @@ packages=(
     ranger
     ripgrep
     scroll-reverser
-    # spotify
     tmux
     tpm
     tree-sitter
     visual-studio-code
-    warp
-    wezterm
     zoom
 )
 
@@ -70,4 +61,3 @@ for package in "${packages[@]}"; do
         echo "Successfully installed package $package..."
     fi
 done
-
