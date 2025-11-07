@@ -124,6 +124,7 @@ alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias lg="lazygit"
 alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias t="tmux"
+alias cd="z"
 
 # pnpm
 export PNPM_HOME="/Users/vinit/Library/pnpm"
