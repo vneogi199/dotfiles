@@ -48,6 +48,7 @@ packages=(
     tmux
     tpm
     tree-sitter
+    uv
     visual-studio-code
     zoom
 )
