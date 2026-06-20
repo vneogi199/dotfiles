@@ -41,6 +41,7 @@ packages=(
     microsoft-office
     notion
     numi
+    opencode
     pearcleaner
     ranger
     ripgrep
@@ -48,6 +49,7 @@ packages=(
     tmux
     tpm
     tree-sitter
+    tree-sitter-cli
     uv
     visual-studio-code
     zoom
