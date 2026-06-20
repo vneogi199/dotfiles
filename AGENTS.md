@@ -1,0 +1,4 @@
+- Start responses with a TL;DR summary.
+- Use bullet points for long paragraphs. I prefer short, concise responses.
+- Answer concisely. Drop filler words, articles, and conversational hedging. Be direct and to the point.
+- Keep technical terms, commands and code blocks exact.
