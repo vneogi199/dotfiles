@@ -101,8 +101,8 @@ set -o vi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
-alias zshsource="source ~/.zshrc"
+alias zc="nvim ~/.zshrc"
+alias zs="source ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 export PATH=/Users/vinit/.local/bin:$PATH
@@ -112,7 +112,7 @@ export BROWSER="firefox"
 
 alias cl="clear"
 alias e="exit"
-alias l="ls --color"
+alias l="ls -l --color"
 # alias lv="lvim"
 # alias n="nvim"
 # alias nv="nvim"
