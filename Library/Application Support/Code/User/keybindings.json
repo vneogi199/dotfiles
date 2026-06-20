@@ -10,7 +10,7 @@
         "command": "-editor.action.formatDocument.none",
         "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
     },
-    // Open tabs with CMD    
+    // Open tabs with CMD
     {
         "key": "cmd+1",
         "command": "workbench.action.openEditorAtIndex1"
@@ -183,27 +183,15 @@
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "cmd+w",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
+        "command": "vscode-neovim.send",
+        "key": "ctrl+d",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-d>"
     },
     {
-        "key": "cmd+l",
-        "command": "runCommands",
-        "args": {
-            "commands": [
-                {
-                    "command": "editor.action.insertSnippet",
-                    "when": "editorTextFocus",
-                    "args": {
-                        "snippet": "console.log('${TM_SELECTED_TEXT}$1')$2;"
-                    }
-                },
-                {
-                    "command": "extension.vim_insert",
-                    "when": "editorTextFocus",
-                }
-            ]
-        }
-    }
+        "command": "vscode-neovim.send",
+        "key": "ctrl+u",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "<C-u>"
+    },
 ]
