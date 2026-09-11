@@ -1,0 +1,7 @@
+font-size = 20
+fullscreen = true
+theme = Catppuccin Mocha
+font-family = "IBM Plex Mono"
+font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "GeistMono Nerd Font Mono"
+macos-option-as-alt = true
