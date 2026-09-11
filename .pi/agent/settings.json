@@ -1,0 +1,14 @@
+{
+  "lastChangelogVersion": "0.84.4",
+  "defaultProvider": "opencode",
+  "defaultModel": "deepseek-v4-flash-free",
+  "defaultThinkingLevel": "high",
+  "packages": [
+    "git:github.com/otahontas/pi-coding-agent-catppuccin",
+    "npm:pi-web-access",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@gotgenes/pi-permission-system"
+  ],
+  "theme": "catppuccin-mocha",
+  "hideThinkingBlock": true
+}
