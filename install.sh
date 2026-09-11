@@ -10,6 +10,7 @@ echo "Successfully installed oh-my-zsh"
 
 # Install Homebrew packages
 packages=(
+    codex
     docker
     neovim
     node
@@ -30,11 +31,13 @@ packages=(
     font-fira-code-nerd-font
     font-fira-mono-nerd-font
     font-hack-nerd-font
+    font-ibm-plex-mono
     font-jetbrains-mono-nerd-font
     font-meslo-lg-nerd-font
     font-geist-mono-nerd-font
     go
     google-chrome
+    ghostty
     itsycal
     keyclu
     lazygit
@@ -45,6 +48,7 @@ packages=(
     pearcleaner
     ranger
     ripgrep
+    rust
     scroll-reverser
     tmux
     tpm
@@ -53,6 +57,14 @@ packages=(
     uv
     visual-studio-code
     zoom
+    bottom
+    eza
+    fd
+    fzf
+    herdr
+    pi-coding-agent
+    kde-connect
+    syncthing
 )
 
 for package in "${packages[@]}"; do
