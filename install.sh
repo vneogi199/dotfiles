@@ -57,7 +57,6 @@ packages=(
     uv
     visual-studio-code
     zoom
-    bottom
     eza
     fd
     fzf
