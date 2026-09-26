@@ -10,6 +10,7 @@ echo "Successfully installed oh-my-zsh"
 
 # Install Homebrew packages
 packages=(
+    chatgpt
     codex
     docker
     neovim
