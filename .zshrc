@@ -105,7 +105,7 @@ alias zc="nvim ~/.zshrc"
 alias zs="source ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
-export PATH=/Users/vinit/.local/bin:$PATH
+export PATH=/Users/vinit/.local/bin:$HOME/.orbstack/bin:$PATH
 export VISUAL="nvim"
 export EDITOR="nvim"
 export BROWSER="firefox"
@@ -113,6 +113,9 @@ export BROWSER="firefox"
 alias cl="clear"
 alias e="exit"
 alias l="ls -l --color"
+alias ls="eza --icons=always"
+alias ll="eza -l --git --icons=always"
+alias tree="eza --tree --icons=always"
 # alias lv="lvim"
 # alias n="nvim"
 # alias nv="nvim"
@@ -126,6 +129,7 @@ alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias t="tmux"
 alias cd="z"
 alias oc="opencode"
+alias h=herdr
 
 # pnpm
 export PNPM_HOME="/Users/vinit/Library/pnpm"
@@ -179,3 +183,4 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
