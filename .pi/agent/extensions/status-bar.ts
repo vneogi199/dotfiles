@@ -54,7 +54,7 @@ export default function (pi: ExtensionAPI) {
 		ctx.ui.setFooter((tui: any, theme: any, footerData: any) => {
 			requestRender = () => tui.requestRender();
 			const unsubBranch = footerData.onBranchChange(() => tui.requestRender());
-			const unsubStatus = footerData.onStatusChange?.() ?? (() => {});
+			const unsubStatus = footerData.onStatusChange ? footerData.onStatusChange(() => tui.requestRender()) : (() => {});
 
 			return {
 				dispose() {
@@ -121,11 +121,12 @@ export default function (pi: ExtensionAPI) {
 					if (tlStr) rightParts.push(tlStr);
 					if (durStr) rightParts.push(durStr);
 
-					if (extStatuses && Object.keys(extStatuses).length > 0) {
-						const statusText = Object.values(extStatuses)
-							.filter(Boolean)
-							.join(" ");
-						if (statusText) rightParts.push(theme.fg("muted", statusText));
+					if (extStatuses) {
+						const vals: string[] = extStatuses instanceof Map
+							? [...extStatuses.values()].filter(Boolean) as string[]
+							: Object.values(extStatuses).filter(Boolean) as string[];
+						const statusText = vals.join(" ");
+						if (statusText) rightParts.push(statusText);
 					}
 					const right = rightParts.join(theme.fg("dim", " · "));
 
