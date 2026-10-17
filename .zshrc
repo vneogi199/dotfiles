@@ -122,7 +122,16 @@ alias tree="eza --tree --icons=always"
 alias v="nvim"
 alias vnc="nvim ~/.config/nvim"
 alias vc="nvim ~/.config"
-alias bup="brew update && brew upgrade && brew upgrade -fg && brew cleanup && brew cleanup -s"
+unalias bup 2>/dev/null
+bup() {
+  brew update || return
+  local formulae casks
+  formulae=$(brew outdated --formula --quiet) || return
+  if [[ -n $formulae ]]; then brew upgrade ${(f)formulae} || return; fi
+  casks=$(brew outdated --cask --greedy --quiet | grep -vx microsoft-office) || return
+  if [[ -n $casks ]]; then brew upgrade -fg ${(f)casks} || return; fi
+  brew cleanup && brew cleanup -s
+}
 alias c="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias lg="lazygit"
 alias lgc="lazygit --git-dir=$HOME/dotfiles --work-tree=$HOME"
