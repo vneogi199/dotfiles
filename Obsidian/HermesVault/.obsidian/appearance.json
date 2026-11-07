@@ -1,0 +1,7 @@
+{
+  "cssTheme": "Catppuccin",
+  "interfaceFontFamily": "IBM Plex Mono,JetBrainsMono Nerd Font,JetBrainsMono Nerd Font Mono,CaskaydiaCove Nerd Font Mono,FiraCode Nerd Font Mono,GeistMono Nerd Font,Hack Nerd Font Mono",
+  "textFontFamily": "FiraCode Nerd Font Mono,JetBrainsMono Nerd Font Mono,GeistMono Nerd Font,Hack Nerd Font Mono,CaskaydiaCove Nerd Font Mono,JetBrainsMono Nerd Font,IBM Plex Mono",
+  "showViewHeader": true,
+  "showRibbon": true
+}
